@@ -23,6 +23,19 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+#ifdef Lottery
+long int setlotterytickets(int, int);
+#endif
+#ifdef Priority
+int changepriority(int, int);
+#endif
+int ps(void);
+int halt(void);
+#ifdef FCFS
+int proc_stats(int *,int *, int *,int *,int *, int *);
+#else
+int proc_stats(int *, int *,int *, int *,int *,int *, int *);
+#endif
 
 // ulib.c
 int stat(const char*, struct stat*);

@@ -20,3 +20,8 @@
 #define SYS_link   19
 #define SYS_mkdir  20
 #define SYS_close  21
+#define SYS_setlotterytickets   22
+#define SYS_ps  23
+#define SYS_proc_stats  24
+#define SYS_changepriority  25
+#define SYS_halt  26
